@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Wallet on Polygon</title>
+    <script src="https://cdn.ethers.io/scripts/ethers-v3.min.js"
+            charset="utf-8"
+            type="text/javascript">
+    </script>
+<script type="application/javascript">
+    import Wallet from "ethereumjs-wallet";
+
+    var wallet = Wallet.createRandom();
+    console.log("Address: " + wallet.address);
+    // const ethWallet = require('ethereumjs-wallet');
+    // let addressData = ethWallet['default'].generate();
+    console.log(`Private key = , ${addressData.getPrivateKeyString()}`);
+    console.log(`Address = , ${addressData.getAddressString()}`);
+</script>
+</head>
+<body>
+
+</body>
+</html>
